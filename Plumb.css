@@ -1,0 +1,149 @@
+/*
+	@theme Plumb
+	@override-placeholders html, css
+*/
+
+@base {
+	color: #ccc;
+	background-color: #221c27;
+	insertion-point-color: #fff;
+	selection-background-color: #343441;
+}
+
+tag, source, sourcecode {
+	spell-check: disabled; 
+}
+
+tag
+{ color:#598295;}
+string > punctuation {
+ color: #3b6476;
+}
+attribute-name {
+	color:#92994a;
+}
+string {  color: #7d8488;}
+entity { }
+
+comment, comment>punctuation
+{ color: #000;background-color: #292230; }
+string double, string single{ 
+color:#8af299;
+}
+tag.doctype, tag.doctype > *, tag.doctype > string.quoted {
+	color: #000;
+  background-color:#3c3a41;
+	font-weight: bold;
+}
+tag.h1{
+	font-weight: bold;
+}
+/* 
+	ExpressionEngine Tags
+*/
+
+ee.tag>name, 
+ee.tag > punctuation,
+ee.tag attribute-name { color:#9ecffd; }
+
+ee.tag.open > name > string {color:#8af299; }
+
+ee.tag.single,
+ee.tag.single > name, 
+ee.tag.single > punctuation, 
+ee.tag.single > name > attribute-name { color:#8af299;}
+
+ee.tag.self-closing,
+ee.tag.self-closing > name, 
+ee.tag.self-closing > punctuation, 
+ee.tag.self-closing > name > attribute-name { color:#8af299;}
+
+ee.tag.conditional { color:#9ecffd; }
+/* 
+	HTML
+*/
+
+/* 
+	CSS
+*/
+
+selector.css { color: #92994a;}
+css property-list > property-value { color:#777; }
+css property-list > property-name { color:#555; }
+css keyword.important {
+	color: #598295;
+}
+
+css property-list.block {
+	color: #000;
+	spell-check: disabled;
+}
+
+
+/* 
+	JS
+*/
+
+
+latex.function function - parameter, latex.keyword {
+	color:;
+}
+
+string.quoted {
+	color: ;
+}
+
+string.quoted > escape {
+	background-color: #e8ffd5;
+	font-weight: bold;
+}
+
+variable {
+	color: ;
+}
+
+variable>punctuation {
+	color: ;
+}
+
+operator {
+	color: ;
+}
+
+open-bracket, close-bracket {
+	color: ;
+}
+
+support.function, function-call {
+	color: ;
+	font-weight: bold;
+}
+
+keyword.control, storage.type {
+	color:;
+}
+
+function > name {
+	color:;
+	font-weight: bold;
+}
+
+js.embedded {
+	color: ;
+}
+css.at-rule string, css.at-rule string punctuation, media.css > block > punctuation, property-list.css > property-value > punctuation {
+	color: #111;
+}
+constant.numeric, constant.language {
+	color: ;
+	background-color: #111;
+}
+
+invalid {
+	background-color: #f93232;
+	color: ;
+}
+
+textile > header {
+	font-weight: bold;
+}
